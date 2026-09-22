@@ -1,0 +1,249 @@
+@media (min-width: 1550px) {
+  .main-content {
+    padding-top: 50px;
+  }
+  .welcome-card {
+    min-height: 310px;
+  }
+  .welcome-card h2 {
+    font-size: 35px;
+  }
+  .pulse-visual {
+    margin-right: 60px;
+  }
+}
+@media (max-width: 1150px) {
+  .sidebar {
+    width: 205px;
+  }
+  .main-shell {
+    margin-left: 205px;
+  }
+  .main-content {
+    padding: 30px 25px;
+  }
+  .topbar {
+    padding: 0 25px;
+  }
+  .pulse-visual {
+    width: 245px;
+  }
+  .welcome-card {
+    padding: 25px;
+  }
+  .welcome-card h2 {
+    font-size: 26px;
+  }
+  .step-card {
+    padding: 17px;
+  }
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .project-tabs {
+    gap: 17px;
+  }
+  .project-tabs small {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .auth-layout {
+    grid-template-columns: 1fr;
+  }
+  .auth-story {
+    display: none;
+  }
+  .auth-main {
+    min-height: 100vh;
+    padding: 28px;
+  }
+  .auth-form {
+    padding: 60px 0;
+  }
+  .sidebar {
+    width: 72px;
+  }
+  .brand-link {
+    padding: 25px 21px;
+  }
+  .sidebar .brand {
+    font-size: 0;
+  }
+  .sidebar .brand-icon {
+    margin: 0;
+  }
+  .sidebar .workspace-picker,
+  .sidebar .new-workspace,
+  .sidebar .nav-label,
+  .sidebar .project-nav,
+  .sidebar .build-note,
+  .sidebar .account > div:nth-child(2) {
+    display: none;
+  }
+  .sidebar nav {
+    padding: 10px;
+  }
+  .sidebar nav a {
+    font-size: 0;
+    gap: 0;
+    padding: 14px;
+    justify-content: center;
+  }
+  .nav-count {
+    display: none;
+  }
+  .sidebar-bottom {
+    padding: 15px 10px;
+  }
+  .account {
+    flex-direction: column;
+    padding: 0;
+    gap: 14px;
+  }
+  .main-shell {
+    margin-left: 72px;
+  }
+  .main-content {
+    padding: 26px 22px;
+  }
+  .topbar {
+    padding: 0 22px;
+    height: 62px;
+  }
+  .topbar-right .local-badge {
+    display: none;
+  }
+  .page-heading {
+    align-items: flex-start;
+  }
+  .page-heading h1 {
+    font-size: 27px;
+  }
+  .page-heading p {
+    font-size: 14px;
+  }
+  .page-heading .primary,
+  .page-heading .secondary {
+    font-size: 12px;
+    padding: 0 11px;
+  }
+  .pulse-visual {
+    display: none;
+  }
+  .welcome-card {
+    min-height: 260px;
+  }
+  .step-grid {
+    gap: 9px;
+  }
+  .step-card {
+    padding: 15px;
+  }
+  .step-card p {
+    font-size: 12px;
+  }
+  .section-heading > span {
+    display: none;
+  }
+  .main-footer {
+    padding: 18px 22px;
+  }
+  .main-footer > span:last-child {
+    display: none;
+  }
+}
+@media (max-width: 540px) {
+  .main-content {
+    padding: 24px 16px;
+  }
+  .topbar {
+    padding: 0 16px;
+  }
+  .topbar > div {
+    gap: 9px;
+  }
+  .topbar > div > span:first-child {
+    display: none;
+  }
+  .page-heading {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .page-heading h1 {
+    font-size: 27px;
+  }
+  .eyebrow {
+    font-size: 11px;
+  }
+  .welcome-card {
+    padding: 24px;
+  }
+  .welcome-card h2 {
+    font-size: 25px;
+  }
+  .step-grid {
+    grid-template-columns: 1fr;
+  }
+  .step-card {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    column-gap: 13px;
+    padding: 16px;
+  }
+  .step-number {
+    grid-row: span 2;
+    margin: 0;
+    align-self: center;
+  }
+  .step-card h3 {
+    margin-bottom: 3px;
+  }
+  .step-card p {
+    font-size: 12px;
+  }
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  .section-heading .muted-link {
+    font-size: 11px;
+  }
+  .telemetry-empty h2 {
+    font-size: 21px;
+  }
+  .telemetry-empty p {
+    font-size: 14px;
+  }
+  .secret-value {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .secret-box {
+    padding: 15px;
+  }
+  .section-description {
+    font-size: 12px;
+  }
+  .keys-section .section-heading h2 {
+    font-size: 15px;
+  }
+  .keys-section .secondary {
+    font-size: 12px;
+    padding: 0 9px;
+  }
+  .auth-top {
+    font-size: 14px;
+  }
+  .main-footer {
+    padding: 16px;
+  }
+  .project-tabs {
+    gap: 20px;
+  }
+  .project-tabs > span {
+    font-size: 12px;
+  }
+  .modal {
+    padding: 22px;
+  }
+}

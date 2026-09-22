@@ -1,0 +1,10 @@
+node_modules
+package-lock.json
+.bootstrap
+.local
+dist
+target
+playwright-report
+test-results
+apps/backend/mvnw*
+*.svg

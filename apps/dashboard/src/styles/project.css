@@ -1,0 +1,332 @@
+/* Project detail */
+.back-link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 12px;
+  color: #8290a0;
+  margin-bottom: 26px;
+}
+.project-tabs {
+  display: flex;
+  gap: 28px;
+  border-bottom: 1px solid #2b323b;
+  margin-bottom: 24px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.project-tabs > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 0 14px;
+  font-size: 14px;
+  color: #626f7e;
+}
+.project-tabs .selected {
+  color: #b2ef78;
+  border-bottom: 2px solid #b2ef78;
+}
+.project-tabs small {
+  font-size: 11px;
+  background: #1d242b;
+  border: 1px solid #2b343e;
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+.telemetry-empty {
+  border: 1px solid #2b353f;
+  background: radial-gradient(ellipse at 50% 0, #202b2040, transparent 60%), #10161c;
+  border-radius: 9px;
+  text-align: center;
+  padding: 30px 20px 23px;
+  margin-bottom: 32px;
+}
+.signal-symbol {
+  display: grid;
+  place-items: center;
+  color: #a6cd8b;
+  margin: 0 auto 17px;
+  width: 62px;
+  height: 62px;
+  border: 1px solid #3b4a34;
+  border-radius: 50%;
+  background: #1c281c;
+}
+.telemetry-empty h2 {
+  margin: 16px 0 11px;
+  font-size: 25px;
+}
+.telemetry-empty p {
+  font-size: 14px;
+  color: #86929e;
+}
+.empty-metrics {
+  display: flex;
+  max-width: 510px;
+  margin: 28px auto 0;
+  border-top: 1px solid #2a333d;
+  padding-top: 18px;
+}
+.empty-metrics > span {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #667483;
+  font-size: 12px;
+}
+.empty-metrics b {
+  font-size: 23px;
+  color: #8d9b8a;
+  font-weight: 400;
+}
+.keys-section .section-heading {
+  margin-bottom: 8px;
+}
+.keys-section .secondary {
+  font-size: 14px;
+  min-height: 46px;
+}
+.section-description {
+  color: #7e8b99;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+.keys-empty {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  border: 1px dashed #323d48;
+  border-radius: 7px;
+  color: #728269;
+}
+.keys-empty h3 {
+  font-size: 14px;
+  color: #c5cdd5;
+  margin-bottom: 5px;
+}
+.keys-empty p {
+  font-size: 14px;
+  color: #788595;
+}
+.table-wrap {
+  position: relative;
+  overflow: auto;
+  border: 1px solid #2d3741;
+  border-radius: 8px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  white-space: nowrap;
+}
+th {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: #161c23;
+  color: #778698;
+  padding: 13px 17px;
+}
+td {
+  font-size: 14px;
+  padding: 16px 17px;
+  border-top: 1px solid #27313c;
+  color: #a7b2bd;
+}
+td:first-child {
+  color: #d1d9df;
+}
+td > svg {
+  display: inline;
+  margin-right: 8px;
+  vertical-align: middle;
+  color: #7c946e;
+}
+td code {
+  font-size: 12px;
+  color: #7f8c9a;
+}
+.status-badge {
+  font-size: 11px;
+  color: #badc9e;
+  background: #263320;
+  border: 1px solid #3c5030;
+  padding: 4px 7px;
+  border-radius: 4px;
+}
+.status-badge.revoked {
+  background: #261f22;
+  color: #9a828c;
+  border-color: #3c3037;
+}
+.secret-box {
+  background: #1a281b;
+  border: 1px solid #536b40;
+  border-radius: 8px;
+  padding: 19px;
+  margin: 18px 0;
+}
+.secret-box > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #b8e496;
+}
+.secret-box strong {
+  font-size: 14px;
+}
+.secret-box .icon-button {
+  margin-left: auto;
+}
+.secret-box p {
+  font-size: 14px;
+  color: #8caa7f;
+  margin: 8px 0 14px;
+}
+.secret-value {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.secret-value code {
+  font-size: 14px;
+  color: #d0e8bf;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+.milestone-note {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #667686;
+  font-size: 14px;
+  padding: 20px 0;
+}
+.milestone-note strong {
+  font-weight: 500;
+  color: #9caab7;
+}
+.delete-project {
+  margin-top: 24px;
+  font-size: 12px;
+}
+.empty {
+  padding: 65px 20px;
+  text-align: center;
+}
+.empty p {
+  margin: 12px;
+}
+.empty a {
+  color: #b2ef78;
+}
+.telemetry-panel {
+  margin-bottom: 32px;
+  min-width: 0;
+}
+.sdk-instructions {
+  margin: 24px 0;
+  padding: 20px;
+  border: 1px solid #2b323b;
+  border-radius: 12px;
+}
+.sdk-instructions summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.sdk-instructions p {
+  color: #9caab7;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.sdk-instructions pre {
+  padding: 16px;
+  background: #0c0f13;
+  color: #d0e8bf;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 14px;
+}
+
+/* Translucent status colors preserve the dark surface and readable request paths. */
+.request-success {
+  --request-color: 135, 218, 164;
+}
+.request-redirect {
+  --request-color: 131, 183, 250;
+}
+.request-warning {
+  --request-color: 241, 191, 105;
+}
+.request-error {
+  --request-color: 245, 139, 151;
+}
+.request-neutral {
+  --request-color: 160, 173, 192;
+}
+.requests-table th {
+  padding: 16px 20px;
+}
+.request-row td {
+  background: rgba(var(--request-color), 0.055);
+  border-top-color: rgba(var(--request-color), 0.14);
+  padding: 19px 20px;
+  color: #c2ccd6;
+}
+.request-row td:first-child {
+  box-shadow: inset 3px 0 rgba(var(--request-color), 0.65);
+}
+.request-row:hover td {
+  background: rgba(var(--request-color), 0.1);
+}
+.request-row code {
+  color: #dbe3ec;
+  font-size: 14px;
+}
+.request-method {
+  color: rgb(var(--request-color));
+  font-weight: 650;
+}
+.request-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 9px;
+  border: 1px solid rgba(var(--request-color), 0.25);
+  border-radius: 6px;
+  background: rgba(var(--request-color), 0.09);
+  color: rgb(var(--request-color));
+  font-size: 13px;
+  font-weight: 600;
+}
+.request-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.request-outcome {
+  margin-left: 10px;
+  color: rgb(var(--request-color));
+  font-size: 12px;
+}
+.request-duration,
+.request-row time {
+  font-variant-numeric: tabular-nums;
+}
+.request-environment {
+  padding: 4px 8px;
+  border-radius: 5px;
+  background: #ffffff06;
+  color: #aebdcc;
+  font-size: 13px;
+}
+.keys-section .section-heading {
+  flex-wrap: wrap;
+  gap: 14px;
+}

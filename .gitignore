@@ -1,0 +1,33 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# JavaScript outputs
+node_modules/
+.next/
+out/
+dist/
+coverage/
+*.tsbuildinfo
+playwright-report/
+test-results/
+
+# Java outputs
+target/
+*.class
+
+# Local editor and operating system files
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+.bootstrap/
+.local/

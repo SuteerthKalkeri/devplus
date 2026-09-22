@@ -1,0 +1,33 @@
+{
+  "name": "devpulse",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/dashboard",
+    "packages/browser-sdk"
+  ],
+  "engines": {
+    "node": ">=22.13.1 <23"
+  },
+  "scripts": {
+    "dev": "npm run dev --workspace=dashboard",
+    "build": "npm run build:sdk && npm run build --workspace=dashboard",
+    "build:sdk": "npm run build --workspace=@devpulse/browser",
+    "test:sdk": "npm run test --workspace=@devpulse/browser",
+    "pack:sdk": "npm pack --workspace=@devpulse/browser --pack-destination .local",
+    "lint": "npm run lint --workspace=dashboard",
+    "db:start": "powershell.exe -NoProfile -File scripts/database.ps1",
+    "db:stop": "powershell.exe -NoProfile -File scripts/database.ps1 stop",
+    "backend": "powershell.exe -NoProfile -File scripts/backend.ps1 run",
+    "test:backend": "powershell.exe -NoProfile -File scripts/backend.ps1 test",
+    "test:browser": "playwright test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "demo": "npm run build:sdk && vite --config demos/http-playground/vite.config.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "prettier": "3.9.8",
+    "prettier-plugin-java": "2.10.4"
+  }
+}

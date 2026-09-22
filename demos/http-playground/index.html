@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevPulse · HTTP playground</title>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">DEVPULSE / SDK PLAYGROUND</p>
+      <h1>Send your first signal.</h1>
+      <p>
+        Connect a project’s ingestion key, then make real HTTP requests. Open your project dashboard
+        to see the results.
+      </p>
+      <form id="connect">
+        <label for="key">Ingestion key</label
+        ><input id="key" type="password" required placeholder="dp_ingest_…" autocomplete="off" />
+        <label for="endpoint">Ingestion endpoint</label
+        ><input id="endpoint" type="url" value="http://127.0.0.1:8081/v1/ingest/events" required />
+        <button>Connect SDK</button>
+      </form>
+      <p id="connection" role="status">Not connected. The key stays in this page’s memory.</p>
+      <section aria-label="Sample requests">
+        <button data-request="ok">Successful request</button
+        ><button data-request="slow">Slow request</button
+        ><button data-request="missing">404 response</button
+        ><button data-request="error">500 response</button
+        ><button data-request="network">Network failure</button
+        ><button id="flush">Send queued events</button>
+      </section>
+      <p id="result" role="status">Choose a request to begin.</p>
+      <p id="stats">Queued: 0 · Sent: 0 · Dropped: 0</p>
+      <p>
+        Query strings and fragments are removed. No cookies, headers, or request/response bodies are
+        recorded. Automatic batches send every five seconds or twenty events.
+      </p>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
